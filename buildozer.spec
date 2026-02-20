@@ -12,6 +12,12 @@ requirements = python3,kivy==2.2.1,kivymd==1.1.1,langchain-ollama==0.0.1,aiohttp
 orientation = portrait
 fullscreen = 0
 
+# ... other settings ...
+
+# Android SDK/NDK paths (leave empty for auto-download)
+android.sdk_path = 
+android.ndk_path = 
+
 # Android specific
 android.permissions = INTERNET,RECORD_AUDIO
 android.api = 33
@@ -25,3 +31,6 @@ source.include_patterns = assets/*
 [buildozer]
 log_level = 2
 warn_on_root = 1
+
+# Increase timeout for SDK downloads
+android.accept_sdk_license = True
